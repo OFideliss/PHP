@@ -24,10 +24,20 @@ function divisao($valor1,$valor2) {
 	echo "<br>";
 	return "Resultado da divisão $valor1/$valor2 = $resultado";
 }
+function quadrado($valor1,$valor2) {
+	$resultado=$valor1;
+	while ($valor2>1) {
+		$resultado*=$valor1;
+		$valor2--;
+	}
+	echo "<br>";
+	return "Resultado de $valor1 elevado a $valor2 = $resultado";
+}
 
 echo adicao(2,2);
 echo subtracao(2,2);
 echo multiplica(2,2);
 echo divisao(2,2);
+echo quadrado(2,6);
 //=========================================
 ?>

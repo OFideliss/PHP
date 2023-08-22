@@ -3,15 +3,18 @@
 
 function recursiva($numero) {
 
-$variavel1 =1;
-$fatorial;
-if ($numero==0) {
-	return $variavel1*=1;
-}
-$fatorial--;
-$variavel1*=$fatorial;
-return $variavel1;
-}
 
-echo recursiva(0);
-?> 
+function calculo($fatorial,$resultado) {
+	while ($fatorial>0) {
+if ($fatorial==1) {
+	return $resultado;
+}
+//return $fatorial;
+$resultado=$resultado*$fatorial;
+$fatorial--;
+}
+}
+echo calculo($numero,1);
+}
+echo recursiva(3);
+//?> 
