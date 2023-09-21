@@ -1,15 +1,14 @@
 <?php
 
-function exercicio($numero1) {
+function exercicio($KmPerorrido,$ConsumoLitros,$PrecoCombustivel) {
 
-$resultado = 1;
-$ref = $numero1;
-for ($i=0; $i <$numero1 ; $i++) { 
-    $resultado*=$ref;
-    $ref--;
-}
+//Calculo consumo médio em Km/l
+$ConsumoMedio = $KmPerorrido / $ConsumoLitros;   
 
-    return "O resultado da multiplicação é : $resultado";
+//Calculo do custo de cada Km percorrido
+$CustoKm = $ConsumoLitros * $PrecoCombustivel / $KmPerorrido;
+    return "Média de consumo da gasolina: $ConsumoMedio"."Km/litro<br>
+    Média de custo de cada Km percorrido: R$$CustoKm";
 }
 
 
