@@ -1,0 +1,9 @@
+//cmd para criar um banco de dados
+create database BancoImagens;
+//cmd para acessar ao banco de dados
+use BancoImagens;
+//cmd para criar uma tabela para armazenar as imagens
+create table imagens(
+    -> id int(4) auto_increment not null,  // id
+    -> imagem BLOB,                        // variavel para imagem
+    -> primary key (id));                  // define como chave primaria o id
